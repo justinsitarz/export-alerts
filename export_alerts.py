@@ -38,7 +38,7 @@ def get_alert_ids():
 def runner():
     print('Starting runner...')
     threads = []
-    with ThreadPoolExecutor(max_workers=20) as executor:
+    with ThreadPoolExecutor(max_workers=10) as executor:
         while alert_ids:
             for alert_id in alert_ids:
                 threads.append(executor.submit(get_alert_data, alert_id))
