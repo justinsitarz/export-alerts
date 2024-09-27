@@ -9,7 +9,7 @@ import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import logging
 
-## Fill in the 4 variables below as needed ##
+## Fill in the 4 variables below ##
 
 api_key = ''
 csv_file = './alerts.csv' # set this to your desired path or leave the same to generate csv in same directory
